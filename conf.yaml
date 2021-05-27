@@ -1,0 +1,24 @@
+db: 'mysql+pymysql://root:Taikang123!@10.135.51.139:3306/basicresource'
+base: 'http://10.135.51.135:19011/basicresource/v1'
+mon: 'http://localhost:19012/netmonitor/v1/monitor_device'
+
+headers: {'x-request-from': 'service'}
+
+access:
+- 1b38d2eb60254c12a39436d53d026072
+
+community: Netops2021
+
+category:
+- 路由器
+- 网络交换机
+- 防火墙
+
+exclude:
+- 710601314a834b6497ba9ebd46155dc4  # n2k
+region: 武汉
+
+handler:
+  25506: lldp
+  2011: lldp
+  9: cdp
